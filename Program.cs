@@ -10,12 +10,15 @@ class SalaryEarned
 
         int[] grossSales = { 350, 5000, 9000, 7000, 4000, 6000, 8000, 2000, 250 };
 
+        // updating the counters and calculating salespersons salary
         foreach (int sale in grossSales)
         {
             int salary = 200 + (int)(0.08 * sale);
             CounterUpdate(counters, salary);
         }
 
+
+        // showing the result in a tabular form
         Console.WriteLine("salaryRange\t Number of salesPerson");
 
         Console.WriteLine("--------------------------------------");
@@ -31,16 +34,10 @@ class SalaryEarned
         Console.WriteLine($"1000 and more\t\t {counters[8]}");
 
 
-
-
-
-
-
-
-
-
     }
 
+
+    // The logic below updates the counter by using the salary range
     static void CounterUpdate(int[] counters, int salary)
     {
         if (salary >= 200 && salary <= 299)
