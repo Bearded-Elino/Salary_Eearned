@@ -70,7 +70,7 @@ class SalaryEarned
             counters[5]++;
         }
 
-        else  (salary >= 800 && salary <= 899)
+        else if  (salary >= 800 && salary <= 899)
         {
             counters[6]++;
         }
